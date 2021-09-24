@@ -63,7 +63,7 @@ python extractPaperCover.py folder -e jpeg"""
     parser.add_argument('inpath', help='Path to folder with all papers')
     parser.add_argument('-o', '--outpath', default="coverpages", help='Output path of paper cover pages')
     parser.add_argument('-e', '--ext', default='png', help='Output file extension')
-    parser.add_argument('-s', '--scale', default=True, action='store_true', help='Flag to rescale pages to A4 (default=True)')
+    parser.add_argument('-s', '--scale', default=False, action='store_true', help='Flag to rescale pages to A4 (default=True)')
     args = parser.parse_args()
 
     if not os.path.exists(args.outpath):
